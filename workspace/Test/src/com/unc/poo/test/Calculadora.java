@@ -1,5 +1,7 @@
 package com.unc.poo.test;
 
+import java.util.Scanner;
+
 public class Calculadora {
 
     // Método para calcular el factorial de un número
@@ -16,8 +18,18 @@ public class Calculadora {
 
     public static void main(String[] args) {
         Calculadora calc = new Calculadora();
-        int numero = 10; // Puedes cambiar este número para probar con otros valores
-        int resultado = calc.calcularFactorial(numero);
-        System.out.println("El factorial de " + numero + " es " + resultado);
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Introduce un número para calcular su factorial: ");
+        int numero = scanner.nextInt();
+
+        try {
+            int resultado = calc.calcularFactorial(numero);
+            System.out.println("El factorial de " + numero + " es " + resultado);
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
+
+        scanner.close();
     }
 }
