@@ -1,0 +1,13 @@
+package com.unc.poo1;
+
+public class Inicio {
+    public static void main(String[] args) {
+        MetodosRapidos metodo = new MetodosRapidos();
+        int resultado1 = metodo.sumaNNumerosPares(6);
+        int resultado2=metodo.sumaNNumerosParesEntre0y(6);
+        String resultado = metodo.mensaje("prueba");
+        System.out.println(resultado);
+        System.out.println(resultado1);
+        System.out.println(resultado2);
+    }
+}
