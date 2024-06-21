@@ -1,6 +1,7 @@
 package com.unc.poo1;
 
 public class MetodosRapidos {
+	
 	public String mensaje(String mensaje) {
 		String mensajeTotal = "";
 		for (int i = 0; i < 10; i++) {
@@ -34,4 +35,27 @@ public class MetodosRapidos {
 		}
 		return true;
 	}
+}
+	
+	public String saberNumeroPrimo(int n) {
+		
+		
+		String mensaje="";
+		
+		for(int i =2;i<=n/2;i=i+1) {
+			
+			if(n% i==0) {
+				
+				mensaje= n+" no es numero primo";
+				
+			}else {
+				
+				mensaje= n+" es numero primo";	
+				
+			}
+		}
+		
+		return mensaje;
+	}
+	
 }
