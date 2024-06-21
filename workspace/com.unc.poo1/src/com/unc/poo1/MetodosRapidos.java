@@ -35,7 +35,7 @@ public class MetodosRapidos {
 		}
 		return true;
 	}
-}
+
 	
 	public String saberNumeroPrimo(int n) {
 		
