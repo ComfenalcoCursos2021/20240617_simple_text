@@ -11,7 +11,7 @@ public class MetodosRapidos {
 
 	public int sumaNNumerosPares(int n) {
 		int suma = 0;
-		for (int i = 2; i <= n*2; i=i+2) {
+		for (int i = 2; i <= n * 2; i = i + 2) {
 			suma = suma + i;
 		}
 		return suma;
@@ -19,10 +19,19 @@ public class MetodosRapidos {
 
 	public int sumaNNumerosParesEntre0y(int n) {
 		int suma = 0;
-		for (int i = 0; i <= n; i=i+2) {
-			
+		for (int i = 0; i <= n; i = i + 2) {
+
 			suma = suma + i;
 		}
 		return suma;
+	}
+
+	public boolean numerosPrimos(int n) {
+		for (int i = 2; i <= n / 2; i = i + 1) {
+			if (n % i == 0) {
+				return false;
+			}
+		}
+		return true;
 	}
 }
